@@ -1,0 +1,151 @@
+
+/* shared styles */
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:ital,wght@0,400;0,800;1,700&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap');
+</style>
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+
+header{
+    background-color:rgba(255, 144, 14, 0.10);
+    padding: 45px 240px;
+    
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin-right: 25px;
+    text-decoration: none;
+}
+ul{
+    display: flex;
+   
+}
+nav li a{
+    text-decoration: none;
+}
+.nav-title{
+    text-align: center;
+font-size: 3rem;
+color: Dark 01;
+
+font-weight: 700;
+}
+.nav-descrip{
+    text-align: center;
+
+font-size: 1.5rem;
+
+font-weight: 500;
+color: Dark 02;
+}
+
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+margin: 0 auto;
+
+}
+.banner-title{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    color: Dark 01;
+    
+}
+.banner-descrip{
+    font-size: 1rem;
+   color: Dark 03; 
+
+font-weight: 400;
+margin-top: -50px;
+}
+.btn-primary{
+ color: #FFF;
+text-align: center;
+font-size: 1.25rem;
+font-weight: 600;
+background-color: tomato;
+padding: 20px 25px;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+
+main{
+    max-width: 1440px;
+    margin: 0 80px;
+}
+.team-container{
+    display: flex;
+    align-items: center;
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:1.5rem;
+    margin: 80px 0px;
+}
+.team-about{
+    padding-left: 76px;
+    padding-right: 80px;
+}
+.quick{
+    color: #727272;
+
+font-size: 2.8rem;
+font-weight: 500;
+}
+.list{
+ color: #131313;
+font-size: 2.8rem;
+font-weight: 700;
+}
+.feature{
+   color: #FF900E;
+
+font-size: 2.8rem;
+font-weight: 700;
+}
+.team-descrip{
+    color:#727272;
+    font-weight: 400;
+
+}
+@media screen and (max-width:576px) 
+{
+    header{
+        padding: 10px;  
+   }
+   nav{
+       flex-direction: column;
+   
+   }
+   .team-container{
+    flex-direction: column-reverse;
+   }
+    
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    header{
+        padding: 25px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
